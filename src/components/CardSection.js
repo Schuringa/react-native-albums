@@ -11,7 +11,7 @@ const CardSection = props => {
 }
 
 CardSection.propTypes = {
-  children: PropTypes.object
+  children: PropTypes.array
 }
 
 const styles = {
@@ -19,7 +19,7 @@ const styles = {
     borderBottomWidth: 1,
     padding: 5,
     backgroundColor: '#fff',
-    jusitfyContent: 'flex-start',
+    justifyContent: 'flex-start',
     flexDirection: 'row',
     borderColor: '#ddd',
     position: 'relative'
