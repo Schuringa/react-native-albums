@@ -39,7 +39,7 @@ const AlbumDetail = ({ album }) => {
 }
 
 AlbumDetail.propTypes = {
-  album: PropTypes.object
+  album: PropTypes
 }
 
 const styles = {
