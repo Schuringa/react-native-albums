@@ -1,8 +1,17 @@
 import React from 'react'
 import { View } from 'react-native'
+import PropTypes from 'prop-types'
 
-const Card = () => {
-  return <View style={styles.containerStyle} />
+const Card = props => {
+  return (
+    <View style={styles.containerStyle}>
+      {props.children}
+    </View>
+  )
+}
+
+Card.propTypes = {
+  children: PropTypes.object
 }
 
 const styles = {
@@ -14,7 +23,7 @@ const styles = {
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
-    shawdowRadius: 2,
+    shadowRadius: 2,
     elevation: 1,
     marginLeft: 5,
     marginRight: 5,
