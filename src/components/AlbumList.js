@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ScrollView, Text } from "react-native";
+import PropTypes from "prop-types";
 import axios from "axios";
 import AlbumDetail from "./AlbumDetail";
 
@@ -30,5 +31,9 @@ class AlbumList extends Component {
     );
   }
 }
+
+AlbumList.propTypes = {
+  album: PropTypes.func
+};
 
 export default AlbumList;
